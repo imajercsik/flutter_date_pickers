@@ -88,6 +88,7 @@ class DayBasedPicker<T> extends StatelessWidget with CommonDatePickerFunctions {
         children: <Widget>[
           Flexible(
             child: GridView.custom(
+              controller: ScrollController(),
               physics: datePickerLayoutSettings.scrollPhysics,
               gridDelegate: datePickerLayoutSettings.dayPickerGridDelegate,
               childrenDelegate:
